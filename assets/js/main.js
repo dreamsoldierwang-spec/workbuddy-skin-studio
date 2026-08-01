@@ -17,7 +17,7 @@ const onScroll = () => {
 window.addEventListener('scroll', onScroll);
 onScroll();
 
-// ===== 动态渲染已生成皮肤 =====
+// ===== 动态渲染皮肤画廊（含缩略图） =====
 async function loadSkins() {
   const grid = document.getElementById('skinsGrid');
   if (!grid) return;
@@ -26,23 +26,31 @@ async function loadSkins() {
     if (!res.ok) throw new Error('manifest ' + res.status);
     const skins = await res.json();
     grid.innerHTML = skins.map(s => {
+      const id = s.file.replace(/\.wbskin$/i, '');
       const c1 = s.accent || '#888';
-      const c2 = s.surface || '#111';
-      const themeLabel = (s.theme || 'dark') === 'dark' ? '暗色' : '亮色';
+      const isLight = (s.theme || 'dark').toLowerCase() === 'light';
+      const themeLabel = isLight ? '亮色' : '暗色';
+      const tagClass = isLight ? 'tag light' : 'tag dark';
+      const thumb = `assets/img/skins/${encodeURIComponent(id)}.jpg`;
       return `
-      <div class="skin-dl">
-        <div class="skin-dl-thumb" style="--c1:${c1};--c2:${c2}">
-          <span class="tag">${themeLabel}</span>
+      <article class="skin-card">
+        <div class="skin-thumb">
+          <img src="${thumb}" alt="${escapeHtml(s.name)} 皮肤预览" loading="lazy" />
+          <span class="${tagClass}">${themeLabel}</span>
         </div>
-        <div class="skin-dl-body">
-          <div class="skin-dl-name"><span class="dot" style="background:${c1}"></span>${escapeHtml(s.name)}</div>
-          <div class="skin-dl-desc">${escapeHtml(s.desc || '')}</div>
-          <a class="dl-btn" href="downloads/skins/${encodeURIComponent(s.file)}" download>下载 .wbskin</a>
+        <div class="skin-body">
+          <div class="skin-name"><span class="dot" style="background:${c1}"></span>${escapeHtml(s.name)}</div>
+          <div class="skin-desc">${escapeHtml(s.desc || '')}</div>
+          <div class="skin-foot">
+            <a class="skin-dl-btn" href="downloads/skins/${encodeURIComponent(s.file)}" download>⬇ 下载</a>
+            <span class="muted">.wbskin</span>
+          </div>
         </div>
-      </div>`;
+        <div class="skin-accent-bar" style="background:linear-gradient(90deg,${c1},transparent)"></div>
+      </article>`;
     }).join('');
   } catch (e) {
-    grid.innerHTML = '<p class="muted" style="grid-column:1/-1">皮肤清单加载失败，请稍后刷新或到 GitHub 仓库查看。</p>';
+    grid.innerHTML = '<p class="muted" style="grid-column:1/-1;text-align:center">皮肤清单加载失败，请稍后刷新或到 GitHub 仓库查看。</p>';
     console.error(e);
   }
 }
