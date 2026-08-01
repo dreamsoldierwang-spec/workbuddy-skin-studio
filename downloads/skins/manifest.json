@@ -1,0 +1,34 @@
+[
+  {
+    "file": "kung-fu-soccer.wbskin",
+    "name": "功夫女足",
+    "theme": "dark",
+    "accent": "#FF6A00",
+    "surface": "#1F0A00",
+    "desc": "基于《功夫女足》海报提取的火焰金橙主题，暗底毛玻璃面板，热血高燃。"
+  },
+  {
+    "file": "odyssey-spartan.wbskin",
+    "name": "奥德赛·斯巴达",
+    "theme": "dark",
+    "accent": "#B83022",
+    "surface": "#0F141C",
+    "desc": "以古希腊战场为氛围的深蓝灰冷色调皮肤，红色羽冠作强调色，背景保持清晰，面板毛玻璃保证可读性。"
+  },
+  {
+    "file": "spider-verse.wbskin",
+    "name": "纵横宇宙",
+    "theme": "dark",
+    "accent": "#E6242A",
+    "surface": "#0A1126",
+    "desc": "基于《蜘蛛侠：纵横宇宙》都市日落画面，红黑战衣撞色搭配金色暮光，城市全景壁纸。"
+  },
+  {
+    "file": "three-kingdoms-luoyang.wbskin",
+    "name": "三国·争洛阳",
+    "theme": "dark",
+    "accent": "#B8574A",
+    "surface": "#1E1812",
+    "desc": "基于三国古战场画面：尘土褐金、暗红旌旗、烟霾暖灰。背景图保留更多战场氛围，面板轻薄毛玻璃，兼顾可读与壁纸可见。"
+  }
+]
