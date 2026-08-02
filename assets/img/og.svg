@@ -1,30 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0a0b10"/>
-      <stop offset="1" stop-color="#141826"/>
+    <linearGradient id="og-bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0" stop-color="#0b0e16"/>
+      <stop offset="1" stop-color="#111626"/>
     </linearGradient>
-    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#d9935a"/>
-      <stop offset="0.5" stop-color="#e6504a"/>
-      <stop offset="1" stop-color="#36e0d4"/>
+    <linearGradient id="og-orb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.15"/>
     </linearGradient>
-    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#e6504a" stop-opacity="0.6"/>
-      <stop offset="1" stop-color="#e6504a" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="og-logo" x1="0" y1="0" x2="120" y2="120">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="980" cy="120" r="320" fill="url(#orb)"/>
-  <circle cx="180" cy="560" r="260" fill="url(#orb)" opacity="0.6"/>
-  <text x="80" y="250" font-family="Inter, Noto Sans SC, sans-serif" font-size="78" font-weight="800" fill="#f2f4fa">WorkBuddy 皮肤工坊</text>
-  <text x="80" y="320" font-family="Inter, Noto Sans SC, sans-serif" font-size="40" font-weight="700" fill="url(#grad)">AI 生成皮肤 · 一键管理应用</text>
-  <text x="80" y="380" font-family="Inter, Noto Sans SC, sans-serif" font-size="28" fill="#aab2c5">skin-generator Skill  +  WorkBuddy 皮肤管理器</text>
-  <rect x="80" y="440" width="430" height="14" rx="7" fill="url(#grad)"/>
-  <g opacity="0.9">
-    <rect x="80" y="500" width="150" height="90" rx="14" fill="#1c2030" stroke="#262b3d"/>
-    <rect x="250" y="500" width="150" height="90" rx="14" fill="#1c2030" stroke="#262b3d"/>
-    <rect x="420" y="500" width="150" height="90" rx="14" fill="#1c2030" stroke="#262b3d"/>
-    <rect x="590" y="500" width="150" height="90" rx="14" fill="#1c2030" stroke="#262b3d"/>
+  <rect width="1200" height="630" fill="url(#og-bg)"/>
+  <circle cx="900" cy="150" r="300" fill="url(#og-orb)"/>
+  <circle cx="200" cy="500" r="220" fill="url(#og-orb)"/>
+  <g transform="translate(540, 205)">
+    <path d="M0 12C0 5.37 5.37 0 12 0H108C114.63 0 120 5.37 120 12V84C120 90.63 114.63 96 108 96H90L66 120L72 96H12C5.37 96 0 90.63 0 84V12Z" fill="url(#og-logo)"/>
+    <text x="60" y="63" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="42" fill="#fff">WB</text>
   </g>
+  <text x="600" y="380" text-anchor="middle" font-family="Inter, Noto Sans SC, Arial, sans-serif" font-weight="800" font-size="64" fill="#fff">WorkBuddy 皮肤工坊</text>
+  <text x="600" y="455" text-anchor="middle" font-family="Inter, Noto Sans SC, Arial, sans-serif" font-weight="500" font-size="32" fill="#9aa3b8">让 WorkBuddy 是你喜欢的模样</text>
 </svg>
