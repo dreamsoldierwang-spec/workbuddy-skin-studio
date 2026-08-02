@@ -44,6 +44,7 @@ function createLightbox() {
 }
 
 function openLightbox(src, caption) {
+  if (!src) return;
   createLightbox();
   const box = document.getElementById('skinLightbox');
   const img = box.querySelector('.lightbox-img');
@@ -53,6 +54,7 @@ function openLightbox(src, caption) {
   box.classList.add('open');
   box.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+  img.onerror = () => { cap.textContent = (caption || '') + '（图片加载失败）'; };
 }
 
 // ===== 动态渲染皮肤画廊（含缩略图 + 大图预览） =====
@@ -116,3 +118,90 @@ function escapeHtml(str) {
 }
 
 loadSkins();
+
+// ===== 皮肤效果轮播 =====
+(function initShowcase() {
+  const track = document.getElementById('showcaseTrack');
+  const carousel = document.getElementById('showcaseCarousel');
+  if (!track || !carousel) return;
+
+  const slides = Array.from(track.children);
+  const total = slides.length;
+  if (!total) return;
+
+  const dotsContainer = document.getElementById('showcaseDots');
+  const prevBtn = carousel.querySelector('.showcase-arrow.prev');
+  const nextBtn = carousel.querySelector('.showcase-arrow.next');
+  let current = 0;
+  let autoTimer = null;
+
+  // 生成指示点
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'showcase-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `第 ${i + 1} 张`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+  const dots = Array.from(dotsContainer.children);
+
+  function update() {
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  function goTo(i) {
+    current = (i + total) % total;
+    update();
+    resetAuto();
+  }
+
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+
+  // 键盘支持
+  carousel.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+  });
+  carousel.setAttribute('tabindex', '0');
+
+  // 触摸滑动支持
+  let startX = 0;
+  let isDragging = false;
+  track.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  }, { passive: true });
+  track.addEventListener('touchmove', () => { if (isDragging) isDragging = true; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    if (!isDragging) return;
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) next(); else prev();
+    }
+    isDragging = false;
+  }, { passive: true });
+
+  // 自动轮播
+  function startAuto() {
+    stopAuto();
+    autoTimer = setInterval(next, 5000);
+  }
+  function stopAuto() {
+    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+  }
+  function resetAuto() { stopAuto(); startAuto(); }
+
+  carousel.addEventListener('mouseenter', stopAuto);
+  carousel.addEventListener('mouseleave', startAuto);
+  carousel.addEventListener('focusin', stopAuto);
+  carousel.addEventListener('focusout', startAuto);
+
+  startAuto();
+  update();
+})();
