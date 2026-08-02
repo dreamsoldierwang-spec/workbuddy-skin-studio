@@ -70,5 +70,29 @@
     "accent": "#FF6A00",
     "surface": "#1F0A00",
     "desc": "暗色火焰金橙主题，毛玻璃面板搭配高燃橙红强调色，预装在皮肤管理器中。"
+  },
+  {
+    "file": "eight-immortals.wbskin",
+    "name": "八仙",
+    "theme": "dark",
+    "accent": "#E8B84D",
+    "surface": "#1A0F0A",
+    "desc": "以《八仙》神话修仙画面为氛围，暖金夕照与暗红云涛交织，仙气缭绕的暗色主题。"
+  },
+  {
+    "file": "zootopia.wbskin",
+    "name": "疯狂动物城",
+    "theme": "light",
+    "accent": "#4CAF50",
+    "surface": "#F4F7F2",
+    "desc": "以《疯狂动物城》葱郁城市为氛围，草木青绿与暖木棕搭配，清新明快的浅色主题。"
+  },
+  {
+    "file": "wandering-earth.wbskin",
+    "name": "流浪地球",
+    "theme": "dark",
+    "accent": "#4FC3F7",
+    "surface": "#0B1218",
+    "desc": "以《流浪地球》行星发动机与云海为氛围，冷冽蓝白与钢铁灰交织，宏大科幻的暗色主题。"
   }
 ]
