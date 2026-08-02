@@ -1,22 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
   <defs>
-    <linearGradient id="wbskin-logo" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7c5cff"/>
+    <linearGradient id="wbskin-logo" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b6bff"/>
+      <stop offset="0.55" stop-color="#7c5cff"/>
       <stop offset="1" stop-color="#22d3ee"/>
     </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
-  <!-- 圆角方形脑袋 -->
-  <rect x="4" y="6" width="32" height="28" rx="13" fill="url(#wbskin-logo)"/>
-  <!-- 左耳 -->
-  <circle cx="11" cy="10" r="5.5" fill="url(#wbskin-logo)"/>
-  <!-- 右耳 -->
-  <circle cx="29" cy="10" r="5.5" fill="url(#wbskin-logo)"/>
-  <!-- 脸部 -->
-  <rect x="8" y="12" width="24" height="18" rx="10" fill="#fff" fill-opacity="0.92"/>
+  <!-- 左触角 -->
+  <circle cx="14" cy="9" r="5" fill="url(#wbskin-logo)"/>
+  <!-- 右触角 -->
+  <circle cx="34" cy="9" r="5" fill="url(#wbskin-logo)"/>
+  <!-- 主脑袋 -->
+  <rect x="6" y="10" width="36" height="32" rx="16" fill="url(#wbskin-logo)"/>
+  <!-- 脸部高光区 -->
+  <rect x="10" y="16" width="28" height="22" rx="13" fill="#fff" fill-opacity="0.95"/>
   <!-- 左眼 -->
-  <ellipse cx="15.5" cy="20" rx="2.6" ry="3.4" fill="#0b0e16"/>
+  <circle cx="18.5" cy="25" r="3.2" fill="#0b0e16"/>
+  <circle cx="19.5" cy="23.8" r="1.1" fill="#fff"/>
   <!-- 右眼 -->
-  <ellipse cx="24.5" cy="20" rx="2.6" ry="3.4" fill="#0b0e16"/>
+  <circle cx="29.5" cy="25" r="3.2" fill="#0b0e16"/>
+  <circle cx="30.5" cy="23.8" r="1.1" fill="#fff"/>
+  <!-- 腮红 -->
+  <ellipse cx="14" cy="30" rx="2.6" ry="1.6" fill="#ff8fb8" fill-opacity="0.45"/>
+  <ellipse cx="34" cy="30" rx="2.6" ry="1.6" fill="#ff8fb8" fill-opacity="0.45"/>
   <!-- 微笑 -->
-  <path d="M17.2 26.2c1.2 1.1 4.4 1.1 5.6 0" stroke="#0b0e16" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+  <path d="M20 33c2 1.6 6 1.6 8 0" stroke="#0b0e16" stroke-width="2" stroke-linecap="round" fill="none"/>
 </svg>
