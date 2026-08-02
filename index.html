@@ -39,6 +39,7 @@
       <span class="orb orb-a"></span>
       <span class="orb orb-b"></span>
       <span class="orb orb-c"></span>
+      <span class="orb orb-d"></span>
       <div class="grid-lines"></div>
     </div>
     <div class="hero-inner">
@@ -117,27 +118,37 @@
 
   <!-- 学习制作皮肤（独立版块） -->
   <section class="section section--make" id="make">
-    <div class="make-wrap">
-      <div class="make-badge">进阶 · 给爱折腾的你</div>
-      <div class="make-text">
-        <h2>🛠️ 学习制作皮肤</h2>
-        <p>现成的看腻了？你自己也能造。安装 <b>skin-generator</b> Skill 后，给 AI 一张图（电影海报、游戏截图、配色图都行），它就会自动取色、按五层 CSS 架构生成标准的 <code>.wbskin</code> 皮肤包——和你下载到的是同一种格式。</p>
-        <ol class="make-steps">
-          <li><b>安装 Skill</b>：把 skill 放进 WorkBuddy 的 Skills 目录，重启即可调用。</li>
-          <li><b>给图生成</b>：对话里上传参考图，说一句「帮我做个皮肤」。</li>
-          <li><b>导出应用</b>：生成后导入皮肤管理器，同样一键应用。</li>
-        </ol>
-        <div class="make-btns">
-          <a class="btn btn-primary" href="downloads/skin-generator.zip" download>下载 Skill（.zip）</a>
-        </div>
+    <div class="make-head">
+      <span class="kicker">进阶 · 给爱折腾的你</span>
+      <h2>🛠️ 学习制作皮肤</h2>
+      <p>现成的看腻了？你自己也能造。安装 <b>skin-generator</b> Skill 后，给 AI 一张图，它就会自动取色并按五层 CSS 架构生成标准 <code>.wbskin</code> 皮肤包。</p>
+    </div>
+    <div class="make-steps-grid">
+      <div class="make-step">
+        <div class="make-step-num">1</div>
+        <h4>安装 Skill</h4>
+        <p>把 skill 放进 WorkBuddy 的 Skills 目录，重启即可调用。</p>
       </div>
-      <div class="make-card">
-        <div class="make-card-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="make-card-title">WorkBuddy · Agent</span></div>
-        <div class="make-card-body">
+      <div class="make-step">
+        <div class="make-step-num">2</div>
+        <h4>给图生成</h4>
+        <p>对话里上传参考图，说一句「帮我做个皮肤」。</p>
+      </div>
+      <div class="make-step">
+        <div class="make-step-num">3</div>
+        <h4>导出应用</h4>
+        <p>生成后导入皮肤管理器，同样一键应用。</p>
+      </div>
+    </div>
+    <div class="make-demo">
+      <div class="make-demo-card">
+        <div class="make-demo-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="make-demo-title">WorkBuddy · Agent</span></div>
+        <div class="make-demo-body">
           <div class="msg msg--user"><div class="avatar">🧑</div><div class="bubble">用这张图帮我做个 WorkBuddy 皮肤</div></div>
           <div class="msg msg--bot"><div class="avatar">🤖</div><div class="bubble">已分析主色，生成中… ✅ 完成：<b>xxx.wbskin</b><br /><span class="muted">暗色主题 · 毛玻璃面板</span></div></div>
         </div>
       </div>
+      <a class="btn btn-primary btn-lg" href="downloads/skin-generator.zip" download>下载 Skill（.zip）</a>
     </div>
   </section>
 
