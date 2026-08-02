@@ -5,7 +5,8 @@
     "theme": "dark",
     "accent": "#B83022",
     "surface": "#0F141C",
-    "desc": "以古希腊战场为氛围的深蓝灰冷色调皮肤，红色羽冠作强调色，背景保持清晰，面板毛玻璃保证可读性。"
+    "desc": "以古希腊战场为氛围的深蓝灰冷色调皮肤，红色羽冠作强调色，背景保持清晰，面板毛玻璃保证可读性。",
+    "bg": "odyssey-spartan-bg.jpg"
   },
   {
     "file": "three-kingdoms-luoyang.wbskin",
@@ -13,7 +14,8 @@
     "theme": "dark",
     "accent": "#B8574A",
     "surface": "#1E1812",
-    "desc": "基于三国古战场画面：尘土褐金、暗红旌旗、烟霾暖灰。背景图保留更多战场氛围，面板轻薄毛玻璃，兼顾可读与壁纸可见。"
+    "desc": "基于三国古战场画面：尘土褐金、暗红旌旗、烟霾暖灰。背景图保留更多战场氛围，面板轻薄毛玻璃，兼顾可读与壁纸可见。",
+    "bg": "three-kingdoms-luoyang-bg.jpg"
   },
   {
     "file": "super-mario-galaxy.wbskin",
@@ -21,7 +23,8 @@
     "theme": "dark",
     "accent": "#E52521",
     "surface": "#0A1628",
-    "desc": "以《超级马里奥》银河冒险为氛围，马里奥红与太空蓝紫交织，深色背景保证文字清晰可读。"
+    "desc": "以《超级马里奥》银河冒险为氛围，马里奥红与太空蓝紫交织，深色背景保证文字清晰可读。",
+    "bg": "super-mario-galaxy-bg.jpg"
   },
   {
     "file": "cold-war-1994.wbskin",
@@ -29,7 +32,8 @@
     "theme": "dark",
     "accent": "#C9A45C",
     "surface": "#1A1510",
-    "desc": "以《寒战 1994》的港式警匪氛围为灵感，暖棕皮革与暗金灯光交织，沉稳冷峻。"
+    "desc": "以《寒战 1994》的港式警匪氛围为灵感，暖棕皮革与暗金灯光交织，沉稳冷峻。",
+    "bg": "cold-war-1994-bg.jpg"
   },
   {
     "file": "fire-shades.wbskin",
@@ -37,7 +41,8 @@
     "theme": "dark",
     "accent": "#00D4FF",
     "surface": "#0D0818",
-    "desc": "以《火遮眼》霓虹夜店为氛围，蓝紫赛博光效与暗调背景碰撞，锐利动感。"
+    "desc": "以《火遮眼》霓虹夜店为氛围，蓝紫赛博光效与暗调背景碰撞，锐利动感。",
+    "bg": "fire-shades-bg.jpg"
   },
   {
     "file": "toy-story-5.wbskin",
@@ -45,7 +50,8 @@
     "theme": "light",
     "accent": "#76B041",
     "surface": "#FDF9F0",
-    "desc": "以《玩具总动员 5》明亮房间为氛围，胡迪黄与巴斯绿点缀，清新活泼的浅色主题。"
+    "desc": "以《玩具总动员 5》明亮房间为氛围，胡迪黄与巴斯绿点缀，清新活泼的浅色主题。",
+    "bg": "toy-story-5-bg.jpg"
   },
   {
     "file": "minions-medieval.wbskin",
@@ -53,7 +59,8 @@
     "theme": "dark",
     "accent": "#FCE029",
     "surface": "#1C1D21",
-    "desc": "以《小黄人》中世纪盔甲造型为灵感，明黄与银灰盔甲碰撞，俏皮又复古。"
+    "desc": "以《小黄人》中世纪盔甲造型为灵感，明黄与银灰盔甲碰撞，俏皮又复古。",
+    "bg": "minions-medieval-bg.jpg"
   },
   {
     "file": "spider-man-nyc.wbskin",
@@ -61,7 +68,8 @@
     "theme": "dark",
     "accent": "#E23636",
     "surface": "#0A1628",
-    "desc": "以《蜘蛛侠》纽约高楼飞荡为氛围，经典红蓝战衣配色，都市高空背景。"
+    "desc": "以《蜘蛛侠》纽约高楼飞荡为氛围，经典红蓝战衣配色，都市高空背景。",
+    "bg": "spider-man-nyc-bg.jpg"
   },
   {
     "file": "spider-verse-cross.wbskin",
@@ -69,7 +77,8 @@
     "theme": "dark",
     "accent": "#FF6A00",
     "surface": "#1F0A00",
-    "desc": "暗色火焰金橙主题，毛玻璃面板搭配高燃橙红强调色，预装在皮肤管理器中。"
+    "desc": "暗色火焰金橙主题，毛玻璃面板搭配高燃橙红强调色，预装在皮肤管理器中。",
+    "bg": "spider-verse-cross-bg.jpg"
   },
   {
     "file": "eight-immortals.wbskin",
@@ -77,7 +86,8 @@
     "theme": "dark",
     "accent": "#E8B84D",
     "surface": "#1A0F0A",
-    "desc": "以《八仙》神话修仙画面为氛围，暖金夕照与暗红云涛交织，仙气缭绕的暗色主题。"
+    "desc": "以《八仙》神话修仙画面为氛围，暖金夕照与暗红云涛交织，仙气缭绕的暗色主题。",
+    "bg": "eight-immortals-bg.jpg"
   },
   {
     "file": "zootopia.wbskin",
@@ -85,7 +95,8 @@
     "theme": "light",
     "accent": "#4CAF50",
     "surface": "#F4F7F2",
-    "desc": "以《疯狂动物城》葱郁城市为氛围，草木青绿与暖木棕搭配，清新明快的浅色主题。"
+    "desc": "以《疯狂动物城》葱郁城市为氛围，草木青绿与暖木棕搭配，清新明快的浅色主题。",
+    "bg": "zootopia-bg.jpg"
   },
   {
     "file": "wandering-earth.wbskin",
@@ -93,6 +104,7 @@
     "theme": "dark",
     "accent": "#4FC3F7",
     "surface": "#0B1218",
-    "desc": "以《流浪地球》行星发动机与云海为氛围，冷冽蓝白与钢铁灰交织，宏大科幻的暗色主题。"
+    "desc": "以《流浪地球》行星发动机与云海为氛围，冷冽蓝白与钢铁灰交织，宏大科幻的暗色主题。",
+    "bg": "wandering-earth-bg.jpg"
   }
 ]
