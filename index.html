@@ -20,7 +20,7 @@
   <header class="nav" id="nav">
     <div class="nav-inner">
       <a class="brand" href="#top">
-        <img class="brand-mark" src="assets/img/logo.svg" alt="WorkBuddy 皮肤工坊" width="28" height="28" />
+        <img class="brand-mark" src="assets/img/logo.svg" alt="WorkBuddy 皮肤工坊" width="36" height="36" />
         <span class="brand-text">WorkBuddy 皮肤工坊</span>
       </a>
       <nav class="nav-links" id="navLinks">
@@ -43,7 +43,7 @@
       <div class="grid-lines"></div>
     </div>
     <div class="hero-inner">
-      <div class="hero-badge"><img src="assets/img/logo.svg" alt="" width="16" height="16" /> 为 WorkBuddy 桌面端打造</div>
+      <div class="hero-badge"><img src="assets/img/logo.svg" alt="" width="20" height="20" /> 为 WorkBuddy 桌面端打造</div>
       <h1 class="hero-title">让 WorkBuddy<br /><span class="grad">是你喜欢的模样</span></h1>
       <p class="hero-sub">
         下载皮肤管理器 App，挑喜欢的皮肤一键下载，再导入应用——<br />
@@ -123,32 +123,58 @@
       <h2>🛠️ 学习制作皮肤</h2>
       <p>现成的看腻了？你自己也能造。安装 <b>skin-generator</b> Skill 后，给 AI 一张图，它就会自动取色并按五层 CSS 架构生成标准 <code>.wbskin</code> 皮肤包。</p>
     </div>
+
+    <!-- 上半：制作皮肤的 3 个步骤 -->
     <div class="make-steps-grid">
       <div class="make-step">
-        <div class="make-step-num">1</div>
+        <div class="make-step-icon">🧩</div>
         <h4>安装 Skill</h4>
-        <p>把 skill 放进 WorkBuddy 的 Skills 目录，重启即可调用。</p>
+        <p>把 skill 放进 WorkBuddy 的 Skills 目录，重启 WorkBuddy 即可在对话中调用。</p>
       </div>
       <div class="make-step">
-        <div class="make-step-num">2</div>
+        <div class="make-step-icon">🖼️</div>
         <h4>给图生成</h4>
-        <p>对话里上传参考图，说一句「帮我做个皮肤」。</p>
+        <p>在对话里上传任意参考图，说一句「帮我做个 WorkBuddy 皮肤」。</p>
       </div>
       <div class="make-step">
-        <div class="make-step-num">3</div>
+        <div class="make-step-icon">🚀</div>
         <h4>导出应用</h4>
-        <p>生成后导入皮肤管理器，同样一键应用。</p>
+        <p>生成 <code>.wbskin</code> 后导入皮肤管理器，点「应用」即可换上新皮肤。</p>
       </div>
     </div>
+
+    <!-- 下半：模拟用户与 Agent 的对话 -->
     <div class="make-demo">
       <div class="make-demo-card">
-        <div class="make-demo-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="make-demo-title">WorkBuddy · Agent</span></div>
+        <div class="make-demo-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="make-demo-title">WorkBuddy · Agent 对话演示</span>
+        </div>
         <div class="make-demo-body">
-          <div class="msg msg--user"><div class="avatar">🧑</div><div class="bubble">用这张图帮我做个 WorkBuddy 皮肤</div></div>
-          <div class="msg msg--bot"><div class="avatar">🤖</div><div class="bubble">已分析主色，生成中… ✅ 完成：<b>xxx.wbskin</b><br /><span class="muted">暗色主题 · 毛玻璃面板</span></div></div>
+          <div class="chat-row user">
+            <div class="chat-avatar">🧑</div>
+            <div>
+              <div class="chat-bubble">用这张图帮我做一个 WorkBuddy 皮肤</div>
+              <div class="chat-meta">你 · 刚刚</div>
+            </div>
+          </div>
+          <div class="chat-row bot">
+            <div>
+              <div class="chat-bubble">收到！已分析图片主色，正在生成五层 CSS 主题… ✅ 完成<br /><b>赛博霓虹.wbskin</b><br /><span class="muted">暗色主题 · 毛玻璃面板 · 霓虹强调色</span></div>
+              <div class="chat-meta">AI Agent · 刚刚</div>
+            </div>
+            <div class="chat-avatar">🤖</div>
+          </div>
+          <div class="chat-row bot">
+            <div>
+              <div class="chat-bubble">把它导入皮肤管理器，点「应用」就能换上了。需要我帮你再做一版浅色主题吗？</div>
+              <div class="chat-meta">AI Agent · 刚刚</div>
+            </div>
+            <div class="chat-avatar">🤖</div>
+          </div>
         </div>
       </div>
-      <a class="btn btn-primary btn-lg" href="downloads/skin-generator.zip" download>下载 Skill（.zip）</a>
+      <a class="btn btn-primary btn-lg" href="downloads/skin-generator.zip" download>下载 skin-generator Skill（.zip）</a>
     </div>
   </section>
 
@@ -186,7 +212,7 @@
   <!-- 页脚 -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-brand"><img class="brand-mark" src="assets/img/logo.svg" alt="" width="28" height="28" /><span>WorkBuddy 皮肤工坊</span></div>
+      <div class="footer-brand"><img class="brand-mark" src="assets/img/logo.svg" alt="" width="36" height="36" /><span>WorkBuddy 皮肤工坊</span></div>
       <p class="footer-motto">让 WorkBuddy 是你喜欢的模样</p>
       <p class="footer-copy">@2026 公众号/小红书：AI小帅超会玩</p>
     </div>
