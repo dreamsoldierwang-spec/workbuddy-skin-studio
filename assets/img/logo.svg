@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <defs>
+    <linearGradient id="wbskin-logo" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <path d="M6 8C6 5.79 7.79 4 10 4H30C32.21 4 34 5.79 34 8V24C34 26.21 32.21 28 30 28H25L19 34L21 28H10C7.79 28 6 26.21 6 24V8Z" fill="url(#wbskin-logo)"/>
+  <text x="20" y="22" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="14" fill="#fff">WB</text>
+</svg>
