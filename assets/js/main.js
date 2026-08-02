@@ -42,15 +42,14 @@ async function loadSkins() {
           <div class="skin-name"><span class="dot" style="background:${c1}"></span>${escapeHtml(s.name)}</div>
           <div class="skin-desc">${escapeHtml(s.desc || '')}</div>
           <div class="skin-foot">
-            <a class="skin-dl-btn" href="downloads/skins/${encodeURIComponent(s.file)}" download>⬇ 下载</a>
-            <span class="muted">.wbskin</span>
+            <a class="skin-dl-btn" href="downloads/skins/${encodeURIComponent(s.file)}" download>下载 .wbskin</a>
           </div>
         </div>
         <div class="skin-accent-bar" style="background:linear-gradient(90deg,${c1},transparent)"></div>
       </article>`;
     }).join('');
   } catch (e) {
-    grid.innerHTML = '<p class="muted" style="grid-column:1/-1;text-align:center">皮肤清单加载失败，请稍后刷新或到 GitHub 仓库查看。</p>';
+    grid.innerHTML = '<p class="muted" style="grid-column:1/-1;text-align:center">皮肤清单加载失败，请稍后刷新页面重试。</p>';
     console.error(e);
   }
 }
